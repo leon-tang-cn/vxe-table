@@ -1830,6 +1830,7 @@ const Methods = {
    */
   triggerHoverEvent (evnt, { row }) {
     this.setHoverRow(row)
+    this.$emit('table-row-hover', row)
   },
   setHoverRow (row) {
     let rowid = UtilTools.getRowid(this, row)
